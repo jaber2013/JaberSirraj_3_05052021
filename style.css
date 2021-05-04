@@ -1,0 +1,763 @@
+/*Police*/
+
+@font-face
+	{
+		font-family: "Raleway" ;
+		src: url('Police/Raleway-VariableFont_wght.ttf') format('truetype');
+		    font-weight: normal;
+    		font-style: normal;
+	}
+		
+  
+/*Elements principaux*/
+
+body {
+	font-family: Raleway, Arial, Verdana, sans-serif;
+	color: black;
+	padding: 0.5em;
+}
+
+h2 {
+	font-size: 1.3em;
+}
+
+p {
+	font-size: 0.9em;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: #609ffd;
+}
+
+.colorstar {
+	color: #0065FC;
+}
+
+.star {
+	color: #F2F2F2;
+}
+
+/*Header*/
+
+#Entete {
+	display: grid ;
+	align-items: center;
+	width: 100%;
+}
+
+#LogoReservia {
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 8;
+	}
+
+#navigation {
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 7;
+	grid-column-end: 9;
+	}
+
+#navigationUL {
+	display: flex;
+	justify-content:space-around;
+}
+
+#Logon {
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 9;
+	grid-column-end: 10;
+	text-align: center;
+	}
+
+
+
+/*Navigation*/
+
+ul
+{
+    list-style-type: none;
+}
+
+nav li
+{
+/*	margin-right: 3em; */
+}
+
+nav {
+	margin-top: -2em;
+}
+
+li {
+	padding-top: 2em;
+	margin-top: 0em;
+}
+
+.ElemNav:hover {
+	border-top: 0.1em #609ffd solid; 
+}
+
+a.lienpage:hover {
+color: #609ffd;
+}
+
+.lienpage {
+	color: black;
+	font-size: 1em;
+}
+
+em {
+	font-weight: bold;
+	color: blue;
+	font-style: normal;
+}
+
+/*Titre*/
+#titre {
+	clear: both;
+	padding-top: 1em;
+}
+p {
+	margin-top: -1em;
+}
+
+/*Recherche*/
+
+#recherche {
+	background-color: #f2f2f2;
+	border-collapse: collapse;
+	width: 100px;
+	border-radius: 1em;
+	display: flex;
+
+}
+
+.elementsearch:nth-child(1) {
+	flex: 1;
+}
+.elementsearch:nth-child(2) {
+	flex: 3;
+}
+.elementsearch:nth-child(3) {
+	flex: 2;
+}
+.elementsearch:nth-child(4) {
+	flex: 2;
+}
+
+#localisation {
+	border: none;
+	padding: 1em 1.5em 1em 1.5em;
+	border-radius: 1em 0em 0em 1em;
+}
+
+#mysearch {
+	font-size: 1.20em;
+	border: solid 0.1em #f2f2f2;
+	padding: 0.5em 0em 0.5em 1.5em;
+}
+
+#search {
+	background-color: #0065FC;
+	border: none;
+	color: white;
+	font-size: 1em;
+	font-weight: bold;
+	border-radius: 0em 1em 1em 0em;
+}
+
+#IconSearch {
+	background-color: #0065FC;
+	border: none;
+	color: white;
+	font-size: 1em;
+	font-weight: bold;
+	border-radius: 0em 1em 1em 0em;
+	padding: 0em 1em 0em 1em;
+}
+
+/* Filtre */
+
+#TitreFiltres {
+	padding-right: 0.2em;
+}
+
+#filtres {
+	padding-top: 2em;
+	font-size: 1.1em;
+	width: 70%;
+	display: flex;
+	align-items: center;
+}
+
+#ContainerFiltres {
+	margin:0em 0em 0em 2em;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contentfiltre {
+	border: 0.15em solid #d9d9d9;
+	border-radius: 3em;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+	padding-right: 0.2em;
+	margin-right: 1em;
+}
+
+.contentfiltre:hover {
+	background-color: #0065FC;
+	color: white;
+
+}
+
+.iconfiltre {
+	background-color: #DEEBFF;
+	color: #0065FC;
+	border-radius: 3em;
+	padding: 0.5em;
+	margin-right: 0.2em;
+}
+
+/*Corp*/
+
+#textinfo {
+	padding: 2em 0em 1.5em 0em;
+}
+
+#iconinfo {
+	color: #0065FC;
+}
+
+/*section Hebergement Marseille*/
+#Hebergements {
+	display: flex;
+	flex-direction: row;
+	height: 700px;
+}
+
+#HebergMarseille 
+{
+	background-color: #f2f2f2;
+	border-radius: 1em;
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	height: 100%;
+}
+
+#TitreMars {
+	padding-left: 1em;
+	margin: 1em 0em 0em 1em;
+	width: 90%;
+	height: 10%;
+}
+
+.ContHebergMarseille {
+	width: 100%;
+	height: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around; 
+	margin-bottom: -3em;
+}
+
+.elementsMars {
+	background-color: white;
+	box-shadow: 1em 1em 1em #e6e6e6;
+	width: 27%;
+	height: 40%;
+	margin: 0em;
+	padding: 0.5em;
+	border-radius: 1em;
+}
+
+.imagesHeberg {
+	object-fit: cover;
+	width: 100%;
+	height: 65%;
+	border-radius: 0.8em 0.8em 0em 0em;
+}
+
+#ShowMore {
+	height: 10%;
+	font-size: 1.25em;
+	font-weight: bold;
+	margin: 3em 0em 0em 1em;
+}
+
+/*section populaires*/
+
+#populaires {
+	background-color: #f2f2f2;
+	margin-left: 1.5em;
+	border-radius: 1em;
+	width: 30%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#TitrePop {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0em 3em 0em 3em;
+	width: 90%;
+	height: 10%;
+
+}
+
+#ContPopulaire {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 90%;
+}
+
+.BoxElementsPop {
+	background-color: white;
+	box-shadow: 1em 1em 2em #e6e6e6;
+	width: 85%;
+	height: 35%;
+	padding: 0.5em;
+	border-radius: 1em;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.ElementsPop {
+	
+	height: 100%;
+	width: 45%;
+}
+
+.imagesPop {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	border-radius: 1em 0em 0em 1em;
+}
+
+.DescriptionPop {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0.4em;
+}
+
+/*section activité*/
+
+#activites {
+	margin: 3em 1em 0em 1em;
+}
+
+#ContActivites {
+	display: grid;
+	grid-template-columns: 24% 24% 24% 24%;
+	grid-template-rows: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
+	grid-column-gap: 1em;
+	height: 600px;
+	width: 100%;
+}
+
+.BoxAct {
+	margin: 2em 0em 2em -1em;
+	max-height: 100%;
+	width: 100%;
+	border: solid 2px #f2f2f2;
+	border-radius: 1em;
+	box-shadow: 1em 1em 2em #e6e6e6;
+	overflow: hidden;
+}
+
+.BoxAct:nth-child(1) {
+	grid-row-start: 1;
+	grid-row-end: 11;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.BoxAct:nth-child(2) {
+	grid-row-start: 1;
+	grid-row-end: 7;
+	grid-column-start: 2;
+	grid-column-end: 3;	
+}
+
+.BoxAct:nth-child(3) {
+	grid-row-start: 6;
+	grid-row-end: 11;
+	grid-column-start: 2;
+	grid-column-end: 3;	
+}
+
+.BoxAct:nth-child(4) {
+	grid-row-start: 1;
+	grid-row-end: 11;
+	grid-column-start: 3;
+	grid-column-end: 4;	
+}
+
+.BoxAct:nth-child(5) {
+	grid-row-start: 1;
+	grid-row-end: 6;
+	grid-column-start: 4;
+	grid-column-end: 5;	
+}
+
+.BoxAct:nth-child(6) {
+	grid-row-start: 6;
+	grid-row-end: 11;
+	grid-column-start: 4;
+	grid-column-end: 5;	
+}
+
+.DescriptionAct {
+	padding: 0.5em 0em 0em 2em;
+	background-color: white;
+	height: 18%;
+
+}
+
+.imagesAct {
+	object-fit: cover;
+	width: 100%;
+	height: 82%;
+	border-radius: 1em 1em 0em 0em;
+}
+
+
+/*Footer*/
+
+#basdepage {
+	background-color: #f2f2f2;
+	margin: 0em -1em -1em -4em;
+	padding: 1em 0em 2em 0em;
+	display: flex;
+	justify-content: space-around;
+}
+
+.propos {
+	margin: 1em 0em 0em -5em;
+
+}
+
+nav h3 {
+	margin-left: 2em;
+}
+
+/*Modification Pour Ecran PC avec 1024px < W */
+
+@media screen and (min-width: 1024px) {
+	#IconSearch {
+		display: none;
+	}
+}
+
+/* Modification Pour Tablette avec 768px < W < 1024px */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+	#search {
+		display: none;
+	}
+
+	#filtres {
+		flex-direction: column;
+		align-items: start;
+		margin-top: -2em;
+	}
+
+	#ContainerFiltres {
+		margin-left: 0em;
+	}
+
+	#Hebergements {
+		flex-direction: column-reverse;
+		justify-content: start;
+		height: 900px;
+	}
+
+	#populaires {
+		width: 100%;
+		height: 30%;
+		margin-left: 0em;
+	}
+
+	#TitrePop {
+		height: 20%;
+		width: 90%;
+	}
+
+	#ContPopulaire {
+		flex-direction: row;
+		height: 80%;
+		width: 100%;
+	}
+
+	.BoxElementsPop {
+		height: 80%;
+		width: 27%;
+		margin: 0em;
+	}
+
+	#HebergMarseille {
+		width: 100%;
+		height: 70%;
+		background-color: white;
+	}
+
+	#ContActivites {
+	grid-template-columns: 30% 30% 30% ;
+	grid-template-rows: 50% 50%;
+	grid-column-gap: 1em;
+	margin-left: 1em;
+	height: 600px;
+	width: 100%;
+	}
+
+	.BoxAct:nth-child(1) {
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.BoxAct:nth-child(2) {
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 2;
+	grid-column-end: 3;	
+}
+
+.BoxAct:nth-child(3) {
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 3;
+	grid-column-end: 4;	
+}
+
+.BoxAct:nth-child(4) {
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 2;	
+}
+
+.BoxAct:nth-child(5) {
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 3;	
+}
+
+.BoxAct:nth-child(6) {
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 3;
+	grid-column-end: 4;	
+}
+
+.imagesAct {
+	height: 77%;
+}
+
+.propos {
+	margin: 1em 0em 0em 1em;
+}
+
+}
+
+/* Modification Pour Telephone avec W < 767px */
+
+@media screen and (max-width: 767px) {
+
+	#Entete {
+			grid-template-columns: 1fr 1fr;
+			width: 95%;
+		}
+	#LogoReservia {
+		grid-row-start: 1;
+		grid-row-end: 2;
+		grid-column-start: 1;
+		grid-column-end: 2;
+		}
+	#navigation {
+		grid-row-start: 2;
+		grid-row-end: 3;
+		grid-column-start: 1;
+		grid-column-end: 3;
+		font-size: 1.3em;
+		width: 100%;
+		justify-content: normal;
+		}
+	#Logon {
+		grid-row-start: 1;
+		grid-row-end: 2;
+		grid-column-start: 2;
+		grid-column-end: 3;
+		text-align: right;
+		font-size: 1.3em;
+		padding-right: 1em;
+		}
+
+	#navigationUL {
+		border-bottom: solid 0.1em #f2f2f2;
+		justify-content: center;
+		margin-left: -1em;
+	}
+
+	.ElemNav {
+			padding: 3em 1em 1em 0.5em;
+			margin-bottom: 0em;
+			text-align: center;
+	}
+
+	.ElemNav:hover {
+	border-top: none;
+	border-bottom: solid 0.2em #609ffd; 
+	}
+
+
+
+	#recherche {
+		margin-top: 2em;
+		margin-left: -0.5em;
+		width: 100%;
+	}
+	.elementsearch:nth-child(1) {
+		flex: 1;
+	}
+
+
+	.elementsearch:nth-child(2) {
+		flex: 2;
+	}
+
+	.elementsearch:nth-child(3) {
+		flex: 1;
+	}
+
+	#mysearch {
+	font-size: 1.20em;
+	border: solid 0.1em #f2f2f2;
+	padding: 0.5em 0em 0.5em 0.5em;
+	width: 65%;
+}
+
+	#search {
+		display: none;
+	}
+
+	#filtres {
+		flex-direction: column;
+		align-items: normal;
+		width: 100%;
+	}
+
+	#filtres h3 {
+		margin: 0em 0em 1em 1em;
+	}
+
+	#ContainerFiltres {
+		flex-wrap: wrap;
+		margin-left: 1em;
+		margin-bottom: 1em;
+		align-content: space-around;
+	}
+
+	#Hebergements {
+		flex-direction: column-reverse;
+		justify-content: start;
+		height: 2500px;
+	}
+
+	#populaires {
+		width: 100%;
+		height: 25%;
+		margin-left: 0em;
+		border-radius: 0em;
+		padding: 0em 0em 0em 0em;
+	}
+
+
+	.BoxElementsPop {
+		height: 25%;
+		width: 80%;
+		margin: 0em;
+	}
+
+	#HebergMarseille {
+		width: 100%;
+		height: 75%;
+		margin-top: 1em;
+		background-color: white;
+	}
+
+	.ContHebergMarseille {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: center;
+		height: 90%
+	}
+
+	#TitreMars {
+		height: 10%;
+	}
+
+	.elementsMars {
+		width: 80%;
+		height: 15%;
+	}
+
+	#ShowMore {
+		margin-top: 3em;
+	}
+
+	.activites {
+		width: 100%;
+	}
+
+	#ContActivites {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+		justify-content: space-around;
+		height: 1800px;
+	}
+
+	.BoxAct {
+		height: 16.6% ;
+		width: 80%;
+	}
+
+	#basdepage {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 0em;
+
+	}
+
+	.propos {
+	margin: 1em 0em 0em 0.5em;
+}
+
+	.ElementPropos {
+		margin-top: -1em;
+	}
+}

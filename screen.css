@@ -1,0 +1,203 @@
+/* Modification Pour Telephone avec W < 767px */
+
+@media screen and (max-width: 767px) {
+
+	/* #Entete {
+			grid-template-columns: 1fr 1fr;
+			width: 95%;
+		}
+	#LogoReservia {
+		grid-row-start: 1;
+		grid-row-end: 2;
+		grid-column-start: 1;
+		grid-column-end: 2;
+		}
+	#navigation {
+		grid-row-start: 2;
+		grid-row-end: 3;
+		grid-column-start: 1;
+		grid-column-end: 3;
+		font-size: 1.3em;
+		width: 100%;
+		justify-content: normal;
+		}
+	#Logon {
+		grid-row-start: 1;
+		grid-row-end: 2;
+		grid-column-start: 2;
+		grid-column-end: 3;
+		text-align: right;
+		font-size: 1.3em;
+		padding-right: 1em;
+		}
+
+	#navigationUL {
+		border-bottom: solid 0.1em #f2f2f2;
+		justify-content: center;
+		margin-left: -1em;
+	}
+
+	.ElemNav {
+			padding: 3em 1em 1em 0.5em;
+			margin-bottom: 0em;
+			text-align: center;
+	}
+
+	.ElemNav:hover {
+	border-top: none;
+	border-bottom: solid 0.2em #609ffd; 
+	}
+
+
+
+	#recherche {
+		margin-top: 2em;
+		margin-left: -0.5em;
+		width: 100%;
+	}
+	.elementsearch:nth-child(1) {
+		flex: 1;
+	}
+
+
+	.elementsearch:nth-child(2) {
+		flex: 2;
+	}
+
+	.elementsearch:nth-child(3) {
+		flex: 1;
+	}
+
+	#mysearch {
+	font-size: 1.20em;
+	border: solid 0.1em #f2f2f2;
+	padding: 0.5em 0em 0.5em 0.5em;
+	width: 65%;
+}
+
+	#search {
+		display: none;
+	}
+
+	#filtres {
+		flex-direction: column;
+		align-items: normal;
+		width: 100%;
+	}
+
+	#filtres h3 {
+		margin: 0em 0em 1em 1em;
+	}
+
+	#ContainerFiltres {
+		flex-wrap: wrap;
+		margin-left: 1em;
+		margin-bottom: 1em;
+		align-content: space-around;
+	}
+
+	#Hebergements {
+		flex-direction: column-reverse;
+		justify-content: start;
+		height: 2500px;
+	}
+
+	#populaires {
+		width: 100%;
+		height: 25%;
+		margin-left: 0em;
+		border-radius: 0em;
+		padding: 0em 0em 0em 0em;
+	}
+
+
+	.BoxElementsPop {
+		height: 25%;
+		width: 80%;
+		margin: 0em;
+	}
+
+	#HebergMarseille {
+		width: 100%;
+		height: 75%;
+		margin-top: 1em;
+		background-color: white;
+	}
+
+	.ContHebergMarseille {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: center;
+		height: 90%
+	}
+
+	#TitreMars {
+		height: 10%;
+	}
+
+	.elementsMars {
+		width: 80%;
+		height: 15%;
+	}
+
+	#ShowMore {
+		margin-top: 3em;
+	} */
+
+
+
+	#Hebergement{
+		display: flex;
+		flex-direction: column-reverse;		
+		align-items: center;
+		justify-content: space-around;
+		
+	}
+	#HebergementResultat{    
+		flex:1;
+		width: 80%;
+	}
+	
+	.HebergementResultatContain{
+		display:flex;
+		flex-direction: column;       
+	}
+
+	.HebergementResultatBox{
+		width:80%;
+	}
+	#HebergementPopulaire{   
+		flex:1;
+		width: 80%;
+	}
+
+	#ContActivites {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+		justify-content: space-around;
+		height: 1800px;
+	}
+
+	.BoxAct {
+		height: 16.6% ;
+		width: 80%;
+	}
+
+	/* #basdepage {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 0em;
+
+	}
+
+	.propos {
+	margin: 1em 0em 0em 0.5em;
+}
+
+	.ElementPropos {
+		margin-top: -1em;
+	} */
+}
